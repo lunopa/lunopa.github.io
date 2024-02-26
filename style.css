@@ -1,0 +1,47 @@
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #232856;
+}
+
+[data-theme="dark"] {
+    --color-bg: #232856;
+    --color-fg: #ffffff;
+}
+
+@font-face {
+    font-family: CallingCode;
+    src: url(CallingCode-Regular.ttf);
+}
+
+body {
+    font-family: CallingCode, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: var(--color-fg) 1px solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: var(--color-fg) 1px solid;
+}
+
+button {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.material-symbols-outlined {
+    font-size: 40px !important;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 40;
+}
