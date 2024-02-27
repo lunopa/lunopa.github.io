@@ -18,9 +18,11 @@ body {
 	background-color: var(--color-bg);
 	color: var(--color-fg);
 	margin: 10%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 1em;
+	margin-bottom: 1em;
 	border: var(--color-fg) 1px solid;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -30,6 +32,10 @@ header {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-bottom: var(--color-fg) 1px solid;
+    position: sticky;
+	top: 0;
+  	z-index: 999;
+	background-color: var(--color-bg);
 }
 
 .right-header {
@@ -50,6 +56,19 @@ button {
     margin: 5px;
     border: none;
     text-transform: uppercase;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border: var(--color-fg) 1px solid;
 }
 
 .material-symbols-outlined {
